@@ -1,0 +1,128 @@
+/* Import unique fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Lobster&family=Raleway:wght@600&display=swap');
+
+body {
+    background-color: #E6E6FA; /* Soft Lavender background color */
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #483D8B; /* Dark Slate Blue text color */
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    background-color: #FF8C00; /* Dim Orange background for the navbar */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navigation {
+    display: flex;
+    gap: 15px;
+}
+
+.navigation a {
+    color: #E6E6FA; /* Soft Lavender text color for buttons */
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #F4A460; /* Bright Pink button background */
+    border-radius: 25px; /* Rounded corners for buttons */
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navigation a:hover {
+    background-color: #E6E6FA; /* Soft Lavender background on hover */
+    color:  #FF8C00; /* Bright Pink text color on hover */
+    transform: scale(1.1); /* Slight scaling effect on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .navigation a {
+        margin: 10px 0;
+    }
+}
+
+.logo-container {
+    padding: 50px;
+    margin-top: 70px; /* Increase margin to account for fixed navbar */
+}
+
+.logo {
+    width: 150px;  /* Set a larger width */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+/* Container adjustments to position it correctly under the logo */
+.container {
+    display: flex;
+    width: 100%;
+    height: 5px; /* Adjust height based on content */
+    margin-top: 30px; /* Add space below the logo */
+}
+
+.left-section {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end; /* Align text to the right */
+    align-items: center; /* Center text vertically */
+    padding-right: 20px; /* Padding from the right edge */
+}
+
+.left-section div {
+    text-align: right; /* Align text to the right within the section */
+}
+
+.left-section h1, .left-section h2, .left-section h3 {
+    margin: 0;
+}
+
+.left-section h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    color: #483D8B; /* Dark Slate Blue color */
+}
+
+.left-section h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    color: #483D8B; /* Dark Slate Blue color */
+    margin: 10px 0;
+}
+
+.left-section h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    color: #483D8B; /* Dark Slate Blue color */
+}
+
+.right-section {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start; /* Align image to the left */
+    align-items: center; /* Center image vertically */
+    padding-left: 10px; /* Padding from the left edge */
+}
+
+.right-section img {
+    max-width: 95%; /* Slightly reduced width to move it left */
+    height
